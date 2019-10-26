@@ -76,6 +76,15 @@ a {
   display: block;
   width: 136px;
   height: 2px;
+  background-color: rgba(252, 174, 38, 0);
+  margin: 8px auto 0;
+}
+
+.main-menu-items:hover::after {
+  content: '';
+  display: block;
+  width: 136px;
+  height: 2px;
   background-color: #fcae26;
   margin: 8px auto 0;
 }

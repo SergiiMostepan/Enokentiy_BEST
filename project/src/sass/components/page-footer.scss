@@ -1,52 +1,89 @@
-.footer-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 60px;
-  border-top: $border-color solid 1px;
-}
-
-.footer-text {
-  @include font-settings (14px, 400);
-  margin: 0;
-  color: $secondary-dark-color;
-  font-family: $main-font-stack;
-}
-
-.footer-text__link {
-  text-decoration: none;
-  color: #f38181;
-}
-
-.input-page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.input-email {
-  width: 230px;
-  height: 40px;
-  border: $border-color solid 1px;
-
-  padding-left: 13px;
-  font-family: $other-font-stack;
+.page-footer {
+  background-color: rgba($color: #222222, $alpha: 1);
+  height: 562px;
+  color: #969aa8;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  font-size: 14px;
   font-weight: 400;
-  color: #cccccc;
-  font-size: 15px;
-  line-height: 24px;
-  font-style: italic;
+  line-height: 25px;
+  letter-spacing: 0.56px;
+  position: relative;
+  padding-top: 43px;
 }
 
-.button-input {
-  @include font-settings (14px, 700);
-  color: $primary-white-color;
-  font-family: $main-font-stack;
-  border: 0;
-  width: 150px;
-  height: 40px;
-  background-color: $primary-icon-color;
-  cursor: pointer;
+.site-logo-bottom {
+  height: 26px;
+}
+
+.page-footer-contacts {
+  margin-top: 28px;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    height: 354px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts-adress {
+  font-style: normal;
+}
+
+.contacts {
+  width: 185px;
+  height: 90px;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: #969aa8;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.56px;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    height: 114px;
+  }
+}
+
+.application-button {
+  color: #f6f9fa;
+  font-family: "Open Sans", 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  width: 192px;
+  height: 42px;
+  background-color: #e9ac38;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.politics {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-color: #151515;
+  padding: 23px;
+}
+
+.politics-link {
+  color: #626263;
+  font-family: "Open Sans", 'Arial', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 22px;
 }
