@@ -66,9 +66,9 @@ a {
   font-family: 'Ubuntu', 'Arial', sans-serif;
   font-size: 28px;
   font-weight: 700;
-  line-height: 59.27px;
   letter-spacing: 0.7px;
   text-align: center;
+  margin-top: 13px;
 }
 
 .main-menu-items::after {
@@ -108,6 +108,7 @@ a {
   font-family: 'Ubuntu', 'Arial', sans-serif;
   font-weight: 400;
   text-align: justify;
+  margin: 0 auto;
 }
 
 .menu-list-head-text-decor {
@@ -116,6 +117,17 @@ a {
   font-weight: 700;
   letter-spacing: 0.8px;
 }
+
+.main-menu-scroll {
+  display: block;
+  background-image: url(../../images/2-layers.png);
+  width: 13px;
+  height: 19px;
+  border: none;
+  background-color: rgba(252, 174, 38, 0);
+  margin: 62px auto 0;
+}
+
 
 .menu-list-head-header {
   color: #ffffff;
