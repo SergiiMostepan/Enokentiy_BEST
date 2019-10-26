@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header" id="top">
 
     <div class="menu-list menu-list-op">
       <div class="menu-list-head">
@@ -26,7 +26,7 @@
       <h2 class="menu-list-head-header">Наша місія</h2>
       <div class="menu-list-head-text">Допомогти кожному підлітку
         створити свою <span class="menu-list-head-text-decor">історію успіху</span></div>
-      <button class="main-menu-scroll"></button>
+      <div class="main-menu-scroll"><a class="main-menu-scroll-link" href="#bottom"></a></div>
     </div>
 
 
@@ -58,7 +58,7 @@
 
 
   <footer class="page-footer">
-    <div class="wrapper-footer">
+    <div class="wrapper-footer footer-blocks">
       <a href="#" class="site-logo-bottom"><img src="images/Logo.png"></a>
       <div class="page-footer-contacts">
         <address class="contacts-adress">01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки 26 4-й поверх
@@ -72,19 +72,22 @@
         <div class="footer-buttons">
           <button class="application-button">Залишити заявку</button>
           <div class="footer-socials">
-            <img src="images/Twitter.png">
-            <img src="images/Facebook.png">
-            <img src="images/Youtube.png">
+            <img class="footer-socials-img" src="images/Twitter.png" width="37px" height="37px">
+            <img class="footer-socials-img" src="images/Facebook.png" width="37px" height="37px">
+            <img class="footer-socials-img" src="images/Youtube.png" width="37px" height="37px">
           </div>
         </div>
       </div>
     </div>
     <div class="politics">
-      <a class="politics-link wrapper-footer" href="#">Політика конфіденційності</a>
-      <a class="politics-link wrapper-footer" href="#">Відмова від відповідальності</a>
-      <a class="politics-link wrapper-footer" href="#">Згода з розсилкою</a>
+      <div class="wrapper-footer politics-flex" id="bottom">
+        <a class="politics-link" href="#">Політика конфіденційності</a>
+        <a class="politics-link" href="#">Відмова від відповідальності</a>
+        <a class="politics-link" href="#">Згода з розсилкою</a>
+      </div>
     </div>
 
+    <div class="up-button"><a class="up-link" href="#top"></a></div>
   </footer>
 
   <script>

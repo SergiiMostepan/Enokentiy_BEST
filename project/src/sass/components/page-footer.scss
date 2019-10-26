@@ -9,6 +9,22 @@
   letter-spacing: 0.56px;
   position: relative;
   padding-top: 43px;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    height: 300px;
+  }
+
+  @media (min-width: 1400px) {
+    height: 306px;
+  }
+}
+
+.footer-blocks {
+  @media (min-width: 767px) and (max-width: 1439px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 
 .site-logo-bottom {
@@ -18,17 +34,27 @@
 .page-footer-contacts {
   margin-top: 28px;
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 766px) {
     height: 354px;
   }
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1400px) {
+    flex-direction: row;
+    padding-right: 157px;
+  }
 }
 
 .contacts-adress {
   font-style: normal;
+  width: 185px;
 }
 
 .contacts {
@@ -51,9 +77,15 @@
   justify-content: space-between;
   flex-direction: column;
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 766px) {
     height: 114px;
   }
+
+  @media (min-width: 1400px) {
+    flex-direction: row;
+    width: 520px;
+  }
+
 }
 
 .application-button {
@@ -67,7 +99,23 @@
   background-color: #e9ac38;
   border: none;
   border-radius: 5px;
+}
 
+.footer-socials {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 320px) and (max-width: 766px) {
+    width: 146px;
+  }
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1400px) {
+    width: 162px;
+  }
 }
 
 .politics {
@@ -78,12 +126,80 @@
   width: 100%;
   background-color: #151515;
   padding: 23px;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+  }
+
+  @media (min-width: 1400px) {
+    height: 49px;
+    padding: 17px;
+  }
+
 }
 
+.politics-flex {
+  @media (min-width: 1400px) {
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 660px;
+
+  }
+}
+
+
 .politics-link {
+  display: block;
   color: #626263;
   font-family: "Open Sans", 'Arial', sans-serif;
   font-size: 11px;
   font-weight: 700;
   line-height: 22px;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    align-items: center;
+  }
+}
+
+.up-button {
+  background-color: #333333;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url(../../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  @media (max-width: 766px) {
+    display: none;
+  }
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    width: 55px;
+    height: 55px;
+    right: 50px;
+    top: 0;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: 1400px) {
+    width: 65px;
+    height: 65px;
+    right: 40px;
+    top: 205px;
+  }
+}
+
+.up-link {
+  width: 55px;
+  height: 55px;
+
+  @media (min-width: 1400px) {
+    width: 65px;
+    height: 65px;
+  }
 }
