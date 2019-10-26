@@ -7,48 +7,63 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Project</title>
   <link rel="stylesheet" href="css/styles.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Ubuntu:400,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a href="#" class="site-logo"><img src="images/Logo.png"> </a>
 
-    <div class="wrapper">
-      <label for="check-menu">
-        <input type="checkbox" id="check-menu">
-        <div class="burger-line first"></div>
-        <div class="burger-line second"></div>
-        <div class="burger-line third"></div>
-        <div class="burger-line fourth"></div>
-
-        <nav class="main-menu">
-          <a href="#">Front-End</a>
-          <a href="#">Game Dev</a>
-          <a href="#">Smart Design</a>
-          <a href="#">GoStart Kids</a>
-          <a href="#">Вакансії</a>
-          <a href="#">Контакти</a>
-        </nav>
-      </label>
-      <button class="menu_button">
-        <div class="burger-line first"></div>
-        <div class="burger-line second"></div>
-        <div class="burger-line third"></div>
-        <div class="burger-line fourth"></div>
-      </button>
-
+    <div class="menu-list menu-list-op">
+      <div class="menu-list-head">
+        <a href="#" class="site-logo"><img src="images/Logo.png"> </a>
+        <button class="button-m button-op">
+          <div class="burger-line first"></div>
+          <div class="burger-line second"></div>
+          <div class="burger-line fourth"></div>
+        </button>
+      </div>
+      <h2 class="menu-list-head-header">Наша місія</h2>
+      <div class="menu-list-head-text">Допомогти кожному підлітку
+        створити свою <span class="menu-list-head-text-decor">історію успіху</span></div>
     </div>
-    <!-- <nav class="main-menu">
-      <a href="#">Front-End</a>
-      <a href="#">Game Dev</a>
-      <a href="#">Smart Design</a>
-      <a href="#">GoStart Kids</a>
-      <a href="#">Вакансії</a>
-      <a href="#">Контакти</a>
-    </nav> -->
+
+    <div class="menu-list menu-list-cl">
+      <div class="menu-list-head">
+        <a href="#" class="site-logo"><img src="images/Logo.png"> </a>
+        <button class="button-m button-cl">
+          <div class="burger-line second cl_s"></div>
+          <div class="burger-line third cl_si"></div>
+        </button>
+      </div>
+      <nav class="main-menu">
+        <a class="main-menu-items" href="#">Front-End</a>
+        <a class="main-menu-items" href="#">Game Dev</a>
+        <a class="main-menu-items" href="#">Smart Design</a>
+        <a class="main-menu-items" href="#">GoStart Kids</a>
+        <a class="main-menu-items" href="#">Вакансії</a>
+        <a class="main-menu-items" href="#">Контакти</a>
+        <button class="main-menu-button">Залишити заявку</button>
+      </nav>
+    </div>
+
+
 
 
   </header>
+
+  <script>
+    document.querySelector('.button-op').addEventListener('click', function () {
+      document.querySelector('.menu-list-cl').classList.add('isOpen')
+    });
+
+    document.querySelector('.button-cl').addEventListener('click', function () {
+      document.querySelector('.menu-list-cl').classList.remove('isOpen')
+    });
+
+  </script>
+
+
 
 </body>
 

@@ -1,58 +1,15 @@
-// .page-nav {
-//   display: flex;
-//   justify-content: space-between;
-//   font-family: $main-font-stack;
-//   margin-bottom: 142px;
-// }
+* {
+  box-sizing: border-box;
+}
 
-// .site-navigation {
-//   display: flex;
-//   list-style: none;
-//   justify-content: space-between;
-//   width: 620px;
-//   margin: 0;
-//   align-items: center;
-//   text-transform: uppercase;
-// }
-
-// .site-navigation__link {
-//   @include font-settings (14px, 400);
-//   text-decoration: none;
-//   color: $primary-white-color;
-//   padding: 10px 0;
-//   fill: $primary-white-color;
-
-//   &:hover {
-//     color: $hover-color;
-//     fill: $hover-color;
-//   }
-// }
-
-
-// .site-navigation__link--hover:hover {
-//   border-bottom: 3px solid $hover-color;
-// }
 .site-logo {
   height: 26px;
   width: 100px;
   background-color: rgba(0, 0, 0, .0);
   border: none;
+  padding: 0;
   z-index: 1;
-  // position: absolute;
-  // top: 16px;
-  // left: 20px;
-}
 
-.wrapper {
-  margin: 20px 20px;
-  width: 28px;
-  // position: relative;
-  color: white;
-  height: 20px;
-}
-
-#check-menu {
-  display: none;
 }
 
 
@@ -62,74 +19,149 @@
   height: 2px;
   background-color: #fff;
   transition: .5s all;
-  z-index: 1;
 }
 
 .first {
-  top: 20px;
+  top: 0;
+  left: 0;
 }
 
 .second,
 .third {
-  top: 29px;
-}
-
-.fourth {
-  top: 38px;
-}
-
-.main-menu {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  max-height: 0;
-  font-size: 0;
-  overflow: hidden;
-  transition: .5s all;
-  background-color: #824fe3;
-}
-
-.check-menu {
-  position: relative;
-  display: block;
-  top: 0;
+  top: 9px;
   left: 0;
-  width: 28px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 2;
-  line-height: 40px;
 }
 
-a {
-  display: block;
-  width: 320px;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  border-top: 1px solid rgba(255, 255, 255, .3);
-  // background-color: #000;
-}
-
-#check-menu:checked~.main-menu {
-  max-height: 559px;
-  font-size: 16px;
-}
-
-#check-menu:checked~.first {
-  display: none;
-}
-
-#check-menu:checked~.second {
+.cl_s {
   transform: rotate(45deg);
 }
 
-#check-menu:checked~.third {
+.cl_si {
   transform: rotate(-45deg);
 }
 
-#check-menu:checked~.fourth {
+.fourth {
+  top: 18px;
+  left: 0;
+}
+
+.main-menu {
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  transition: .5s all;
+
+}
+
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.main-menu-items {
+  color: #ffffff;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 59.27px;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+.main-menu-items::after {
+  content: '';
+  display: block;
+  width: 136px;
+  height: 2px;
+  background-color: #fcae26;
+  margin: 8px auto 0;
+}
+
+.main-menu-button {
+  border: none;
+  width: 192px;
+  height: 42px;
+  box-shadow: 0 3px 5px rgba(252, 174, 38, 0.4);
+  background-color: #fcae26;
+  border-radius: 5px;
+  margin-top: 30px;
+  color: #f6f9fa;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.menu-list-head-text {
+  width: 281px;
+  height: 55px;
+  background-color: rgba($color: #161820, $alpha: 0.68);
+  padding: 7px 16px;
+  color: #ffffff;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.menu-list-head-text-decor {
+  color: #e9ac38;
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.menu-list-head-header {
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 0.88px;
+  margin-top: 276px;
+  text-align: center;
+}
+
+.menu-list-op {
+  width: 100%;
+  padding: 20px;
+}
+
+.menu-list-head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-m {
+  position: relative;
+  width: 28px;
+  height: 20px;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.menu-list-op.isOpen {
+  display: block;
+}
+
+.menu-list-cl {
   display: none;
+  position: absolute;
+  background-color: #824fe3;
+  height: 600px;
+}
+
+.menu-list-cl.isOpen {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
 }

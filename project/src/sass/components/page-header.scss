@@ -10,13 +10,14 @@
 // }
 
 .page-header {
-  height: 559px;
-  position: relative;
+  height: 560px;
+  // position: relative;
   display: flex;
   justify-content: space-between;
   background-position: center;
   background-size: cover;
   background-image: url(../../images/Header.png);
+
 
   @media (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
