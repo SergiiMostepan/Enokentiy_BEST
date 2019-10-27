@@ -1,12 +1,12 @@
-.about{
+.about {
   margin-bottom: 60px;
 
-  &_children-container{
+  &_children-container {
     margin-bottom: 40px;
   }
 }
 
-.about_heading{
+.about_heading {
   color: #464646;
   font-family: $main-font;
   font-size: $fs-14;
@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.about_heading:nth-child(1)::before{
+.about_heading:nth-child(1)::before {
   display: block;
   content: '';
   background-image: url("../../images/brackets.png");
@@ -26,44 +26,46 @@
   margin-left: -20px;
 }
 
-@media(min-width:767px){
-  .about{
+@media(min-width:767px) {
+  .about {
     margin-bottom: 70px;
   }
 
-  .about_children-container{
+  .about_children-container {
     display: flex;
     flex-direction: column;
   }
 
-  .about_heading{
+  .about_heading {
     color: #444444;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.25px;
   }
 
-  .about_heading:nth-child(1)::before{
+  .about_heading:nth-child(1)::before {
     width: 26px;
     height: 20px;
     margin-left: -30px;
   }
 }
+
 @media (min-width: 1440px) {
-  .container-for-heading{
+  .container-for-heading {
     display: flex;
     width: 648px;
     flex-direction: column;
     padding: 100px;
+    padding-top: 70px;
     order: 2;
   }
 
-  .about_children-container{
+  .about_children-container {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .about_heading:nth-child(2){
+  .about_heading:nth-child(2) {
     margin-bottom: 70px;
   }
 }

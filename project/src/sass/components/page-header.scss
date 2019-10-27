@@ -6,8 +6,17 @@
   background-image: url(../../images/Header-H.png);
   position: relative;
   z-index: 1;
+  margin-bottom: 35px;
 
+  @media (min-width:767px) {
+    margin-bottom: 40px;
 
+  }
+
+  @media (min-width:1440px) {
+    margin-bottom: 120px;
+
+  }
 
   @media (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
