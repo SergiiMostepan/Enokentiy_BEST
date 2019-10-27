@@ -1,4 +1,4 @@
-.purple-container{
+.purple-container {
   width: 280px;
   height: 230px;
   background-color: #7550de;
@@ -8,7 +8,7 @@
   margin: 0 auto 60px;
 }
 
-.purple-container_text{
+.purple-container_text {
   position: relative;
   color: #ffffff;
   font-family: $main-font;
@@ -17,7 +17,7 @@
   line-height: 24px;
 }
 
-.purple-container_text::before{
+.purple-container_text::before {
   display: block;
   content: '';
   width: 60px;
@@ -30,20 +30,20 @@
 }
 
 @media (min-width: 767px) {
-  .purple-container{
+  .purple-container {
     width: 620px;
     height: 183px;
     text-align: start;
   }
 
-  .purple-container_text{
+  .purple-container_text {
     color: #ffffff;
     font-weight: 400;
     letter-spacing: 1px;
     padding-left: 79px;
   }
 
-  .purple-container_text::before{
+  .purple-container_text::before {
     position: absolute;
     display: block;
     content: '';
@@ -53,14 +53,16 @@
     left: 40px;
   }
 }
+
 @media (min-width: 1440px) {
-  .purple-container{
+  .purple-container {
     width: 1298px;
     padding-right: 260px;
     padding-left: 230px;
+    margin-bottom: 115px;
   }
 
-  .purple-container_text{
+  .purple-container_text {
     font-size: $fs-25;
     letter-spacing: 0;
   }

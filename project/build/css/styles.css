@@ -485,7 +485,7 @@ a {
   width: 100%;
   height: 2px;
   background-color: #fcae26;
-  margin: 8px auto 0;
+  margin: 7px auto 0;
 }
 
 .main-menu-button {
@@ -695,7 +695,7 @@ a {
   background-color: #333333;
   position: fixed;
   border-radius: 50%;
-  background-image: url(../../images/arrow.png);
+  background-image: url(../images/arrow.png);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1082,6 +1082,10 @@ a {
     width: 1300px;
   }
 
+  .direction {
+    margin-bottom: 115px;
+  }
+
   .direction_item {
     padding-right: 40px;
     width: 325px;
@@ -1235,6 +1239,7 @@ a {
     width: 1298px;
     padding-right: 260px;
     padding-left: 230px;
+    margin-bottom: 115px;
   }
 
   .purple-container_text {
@@ -1244,6 +1249,7 @@ a {
 
   .section_title {
     font-size: 33px;
+    margin-bottom: 70px;
   }
 
   .teach {
@@ -1256,7 +1262,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 100px;
+    margin-bottom: 115px;
   }
 
   .teach_item {
