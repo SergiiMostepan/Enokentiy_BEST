@@ -815,6 +815,7 @@ a {
   font-size: 20px;
   line-height: 33px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .section {

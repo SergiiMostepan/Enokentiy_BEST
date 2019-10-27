@@ -15,7 +15,7 @@
   margin-right: 10px;
 }
 
-.spike{
+.spike {
   padding-bottom: 2px;
   padding-left: 2px;
 }
@@ -26,30 +26,33 @@
   background-size: contain;
 }
 
-.first{
+.first {
   width: 18px;
   height: 18px;
   background-image: url("../images/layer7.png");
+
   @media (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url("../images/Слой_7@2x.png");
   }
 }
 
-.second{
+.second {
   width: 16px;
   height: 16px;
   background-image: url("../images/layer6.png");
+
   @media (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url("../images/Слой_6@2x.png");
   }
 }
 
-.third{
+.third {
   width: 16px;
   height: 16px;
   background-image: url("../images/icon_3.png");
+
   @media (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url("../images/icon_333@2x.png");
@@ -62,6 +65,7 @@
   font-size: 20px;
   line-height: 33px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 @media (min-width: 767px) {
