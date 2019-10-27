@@ -1,14 +1,13 @@
-
-.section-list{
+.section-list {
   @extend %list;
 }
 
-.teach{
-  &_item{
+.teach {
+  &_item {
     width: 195px;
     margin: 0 auto 30px;
 
-    &-circle{
+    &-circle {
       width: 55px;
       height: 55px;
       background-color: rgba($color: #e9ac38, $alpha:0.2);
@@ -20,7 +19,7 @@
 
     }
 
-    &-about{
+    &-about {
       color: #464646;
       font-family: $main-font;
       font-size: $fs-14;
@@ -31,11 +30,11 @@
   }
 }
 
-.teach_item:last-child{
+.teach_item:last-child {
   margin-bottom: 60px;
 }
 
-.circle-image{
+.circle-image {
   background-size: contain;
   background-repeat: no-repeat;
   width: 34px;
@@ -45,60 +44,62 @@
   justify-content: center;
 }
 
-.world{
-  background-image: url("../../images/1 (8).png");
+.world {
+  background-image: url("../images/1 (8).png");
 }
 
-.hands{
-  background-image: url("../../images/2.png");
+.hands {
+  background-image: url("../images/2.png");
 }
 
-.peace{
+.peace {
   width: 26px;
-  background-image: url("../../images/3.png");
+  background-image: url("../images/3.png");
 }
 
-.money{
-  background-image: url("../../images/4.png");
+.money {
+  background-image: url("../images/4.png");
 }
 
-.bulb{
-  background-image: url("../../images/5.png");
+.bulb {
+  background-image: url("../images/5.png");
 }
 
-.file{
-  background-image: url("../../images/6.png");
+.file {
+  background-image: url("../images/6.png");
 }
 
-.darts{
-  background-image: url("../../images/7.png");
+.darts {
+  background-image: url("../images/7.png");
 }
-@media (min-width: 767px) and (max-width: 1439px){
-  .teach{
+
+@media (min-width: 767px) and (max-width: 1439px) {
+  .teach {
     margin-bottom: 60px;
   }
 
-  .teach_item{
+  .teach_item {
     width: 208px;
     margin-bottom: 37px;
 
-    &-circle{
+    &-circle {
       width: 80px;
       height: 80px;
     }
   }
 
-  .teach_item:last-child{
+  .teach_item:last-child {
     margin: 0 0 0 50px;
   }
 
 }
+
 @media (min-width: 1440px) {
-  .teach{
+  .teach {
     margin-bottom: 60px;
   }
 
-  .bg{
+  .bg {
     background-color: #fafafa;
     height: 700px;
     background-position: center;
@@ -113,17 +114,17 @@
     margin: 65px 0 0;
     padding-right: 90px;
 
-    &-about{
+    &-about {
       font-size: 18px;
     }
 
-    &-circle{
+    &-circle {
       width: 95px;
       height: 95px;
     }
   }
 
-  .teach_item:nth-child(-n+4)::before{
+  .teach_item:nth-child(-n+4)::before {
     content: '';
     display: block;
     position: absolute;
@@ -134,7 +135,7 @@
     right: 0;
   }
 
-  .teach_item:nth-child(1)::after{
+  .teach_item:nth-child(1)::after {
     content: '';
     display: block;
     position: absolute;

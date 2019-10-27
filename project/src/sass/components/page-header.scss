@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-position: center;
   background-size: cover;
-  background-image: url(../../images/Header-H.png);
+  background-image: url(../images/Header-H.png);
   position: relative;
   z-index: 1;
   margin-bottom: 35px;
@@ -20,6 +20,6 @@
 
   @media (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../../images/Header-H@2x.png);
+    background-image: url(../images/Header-H@2x.png);
   }
 }

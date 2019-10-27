@@ -1,10 +1,10 @@
-.section_title-container{
+.section_title-container {
   display: flex;
   height: 30px;
   margin-bottom: 30px;
 }
 
-.circle{
+.circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +15,8 @@
   margin-right: 10px;
 }
 
-.circle_image{
-  background-image: url("../../images/layer7.png");
+.circle_image {
+  background-image: url("../images/layer7.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -24,20 +24,22 @@
   height: 18px;
 }
 
-.section_title{
+.section_title {
   color: #272727;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 33px;
   text-transform: uppercase;
 }
+
 @media (min-width: 767px) {
-  .circle_image:nth-child(2){
-    background-image: url("../../images/layer6.png");
+  .circle_image:nth-child(2) {
+    background-image: url("../images/layer6.png");
   }
 }
+
 @media (min-width: 1440px) {
-  .section_title{
+  .section_title {
     font-size: $fs-33;
   }
 }

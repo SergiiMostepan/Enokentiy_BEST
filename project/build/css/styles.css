@@ -402,7 +402,7 @@ template {
   justify-content: space-between;
   background-position: center;
   background-size: cover;
-  background-image: url(../../images/Header-H.png);
+  background-image: url(../images/Header-H.png);
   position: relative;
   z-index: 1;
   margin-bottom: 35px;
@@ -543,7 +543,7 @@ a {
 
 .main-menu-scroll {
   display: block;
-  background-image: url(../../images/2-layers.png);
+  background-image: url(../images/2-layers.png);
   width: 13px;
   height: 19px;
   border: none;
@@ -726,7 +726,7 @@ a {
 .about_heading:nth-child(1)::before {
   display: block;
   content: '';
-  background-image: url("../../images/brackets.png");
+  background-image: url("../images/brackets.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 17px;
@@ -784,7 +784,7 @@ a {
 }
 
 .circle_image {
-  background-image: url("../../images/layer7.png");
+  background-image: url("../images/layer7.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -930,32 +930,32 @@ a {
 }
 
 .world {
-  background-image: url("../../images/1 (8).png");
+  background-image: url("../images/1 (8).png");
 }
 
 .hands {
-  background-image: url("../../images/2.png");
+  background-image: url("../images/2.png");
 }
 
 .peace {
   width: 26px;
-  background-image: url("../../images/3.png");
+  background-image: url("../images/3.png");
 }
 
 .money {
-  background-image: url("../../images/4.png");
+  background-image: url("../images/4.png");
 }
 
 .bulb {
-  background-image: url("../../images/5.png");
+  background-image: url("../images/5.png");
 }
 
 .file {
-  background-image: url("../../images/6.png");
+  background-image: url("../images/6.png");
 }
 
 .darts {
-  background-image: url("../../images/7.png");
+  background-image: url("../images/7.png");
 }
 
 .structure {
@@ -1069,7 +1069,7 @@ a {
   }
 
   .circle_image:nth-child(2) {
-    background-image: url("../../images/layer6.png");
+    background-image: url("../images/layer6.png");
   }
 
   .structure {
@@ -1464,6 +1464,6 @@ a {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .page-header {
-    background-image: url(../../images/Header-H@2x.png);
+    background-image: url(../images/Header-H@2x.png);
   }
 }
