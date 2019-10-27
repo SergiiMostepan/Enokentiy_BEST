@@ -94,6 +94,7 @@
   background-color: #e9ac38;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .footer-socials {
@@ -111,6 +112,11 @@
   @media (min-width: 1440px) {
     width: 162px;
   }
+}
+
+.social-link {
+  width: 37px;
+  height: 37px;
 }
 
 .politics {
