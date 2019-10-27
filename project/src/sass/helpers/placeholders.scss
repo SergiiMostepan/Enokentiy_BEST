@@ -1,17 +1,16 @@
-%link {
-    display: inline-block;
-    text-decoration: none;
+%list{
+  list-style: none;
+}
+
+@media (min-width: 767px) {
+  %list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  
-  %list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+}
+@media (min-width: 1440px) {
+  %list{
+    justify-content: flex-start;
   }
-  
-  %button {
-    border: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-  }
+}

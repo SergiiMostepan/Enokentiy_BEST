@@ -1,0 +1,148 @@
+
+.section-list{
+  @extend %list;
+}
+
+.teach{
+  &_item{
+    width: 195px;
+    margin: 0 auto 30px;
+
+    &-circle{
+      width: 55px;
+      height: 55px;
+      background-color: rgba($color: #e9ac38, $alpha:0.2);
+      border-radius: 50%;
+      margin-bottom: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    &-about{
+      color: #464646;
+      font-family: $main-font;
+      font-size: $fs-14;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+  }
+}
+
+.teach_item:last-child{
+  margin-bottom: 60px;
+}
+
+.circle-image{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.world{
+  background-image: url("../../images/1 (8).png");
+}
+
+.hands{
+  background-image: url("../../images/2.png");
+}
+
+.peace{
+  width: 26px;
+  background-image: url("../../images/3.png");
+}
+
+.money{
+  background-image: url("../../images/4.png");
+}
+
+.bulb{
+  background-image: url("../../images/5.png");
+}
+
+.file{
+  background-image: url("../../images/6.png");
+}
+
+.darts{
+  background-image: url("../../images/7.png");
+}
+@media (min-width: 767px) and (max-width: 1439px){
+  .teach{
+    margin-bottom: 60px;
+  }
+
+  .teach_item{
+    width: 208px;
+    margin-bottom: 37px;
+
+    &-circle{
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .teach_item:last-child{
+    margin: 0 0 0 50px;
+  }
+
+}
+@media (min-width: 1440px) {
+  .teach{
+    margin-bottom: 60px;
+  }
+
+  .bg{
+    background-color: #fafafa;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+  }
+
+  .teach_item {
+    position: relative;
+    width: 324px;
+    margin: 65px 0 0;
+    padding-right: 90px;
+
+    &-about{
+      font-size: 18px;
+    }
+
+    &-circle{
+      width: 95px;
+      height: 95px;
+    }
+  }
+
+  .teach_item:nth-child(-n+4)::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 699px;
+    background-color: #e3e3e4;
+    top: -125px;
+    right: 0;
+  }
+
+  .teach_item:nth-child(1)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 699px;
+    background-color: #e3e3e4;
+    top: -125px;
+    left: 0;
+  }
+
+}
