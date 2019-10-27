@@ -20,14 +20,14 @@
 }
 
 .footer-blocks {
-  @media (min-width: 767px) and (max-width: 1299px) {
+  @media (min-width: 767px) and (max-width: 1439px) {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 36px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     margin-bottom: 63px;
   }
 }
@@ -47,11 +47,11 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (min-width: 767px) and (max-width: 1299px) {
+  @media (min-width: 767px) and (max-width: 1439px) {
     flex-direction: row;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
     padding-right: 157px;
   }
@@ -89,7 +89,7 @@
   justify-content: space-between;
   flex-direction: column;
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
     width: 520px;
   }
@@ -123,11 +123,11 @@
     margin-bottom: 33px;
   }
 
-  @media (min-width: 767px) and (max-width: 1299px) {
+  @media (min-width: 767px) and (max-width: 1439px) {
     justify-content: space-around;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     width: 162px;
   }
 }
@@ -145,14 +145,14 @@
   background-color: #151515;
   padding: 23px;
 
-  @media (min-width: 767px) and (max-width: 1299px) {
+  @media (min-width: 767px) and (max-width: 1439px) {
     // height: 49px;
     display: flex;
     justify-content: space-between;
     padding: 17px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     // height: 49px;
     padding: 17px;
   }
@@ -160,7 +160,7 @@
 }
 
 .politics-flex {
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
     padding-right: 660px;
@@ -177,7 +177,7 @@
   font-weight: 700;
   line-height: 22px;
 
-  @media (min-width: 767px) and (max-width: 1299px) {
+  @media (min-width: 767px) and (max-width: 1439px) {
     align-items: center;
   }
 }
@@ -196,14 +196,14 @@
     display: none;
   }
 
-  @media (min-width: 767px) and (max-width: 1299px) {
+  @media (min-width: 767px) and (max-width: 1439px) {
     width: 55px;
     height: 55px;
     right: 39px;
     bottom: 37px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     width: 65px;
     height: 65px;
     right: 39px;
@@ -215,7 +215,7 @@
   width: 55px;
   height: 55px;
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     width: 65px;
     height: 65px;
   }
