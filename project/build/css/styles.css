@@ -781,13 +781,33 @@ a {
   margin-right: 10px;
 }
 
+.spike {
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
 .circle_image {
-  background-image: url("../images/layer7.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.first {
   width: 18px;
   height: 18px;
+  background-image: url("../images/layer7.png");
+}
+
+.second {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/layer6.png");
+}
+
+.third {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon_3.png");
 }
 
 .section_title {
@@ -871,20 +891,20 @@ a {
   background-color: #e9ac38;
 }
 
-.direction_item:hover>.direction_item-about {
+.direction_item:hover > .direction_item-about {
   color: white;
 }
 
-.direction_item:hover>.direction_item-years {
+.direction_item:hover > .direction_item-years {
   color: white;
 }
 
-.direction_item:hover>.direction_item-years::before {
+.direction_item:hover > .direction_item-years::before {
   color: white;
   border-bottom: 1px solid white;
 }
 
-.direction_item:hover>.direction-item_link {
+.direction_item:hover > .direction-item_link {
   color: white;
 }
 
@@ -1246,7 +1266,6 @@ a {
 
   .section_title {
     font-size: 33px;
-    margin-bottom: 70px;
   }
 
   .teach {
@@ -1260,6 +1279,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 115px;
+    padding-top: 70px;
   }
 
   .teach_item {
@@ -1285,7 +1305,7 @@ a {
     width: 1px;
     height: 699px;
     background-color: #e3e3e4;
-    top: -125px;
+    top: -198px;
     right: 0;
   }
 
@@ -1296,7 +1316,7 @@ a {
     width: 1px;
     height: 699px;
     background-color: #e3e3e4;
-    top: -125px;
+    top: -198px;
     left: 0;
   }
 
@@ -1463,10 +1483,20 @@ a {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .page-header {
     background-image: url(../images/Header-H@2x.png);
+  }
+
+  .first {
+    background-image: url("../images/Слой_7@2x.png");
+  }
+
+  .second {
+    background-image: url("../images/Слой_6@2x.png");
+  }
+
+  .third {
+    background-image: url("../images/icon_333@2x.png");
   }
 }
