@@ -3,22 +3,20 @@
 }
 
 .site-logo {
-  height: 26px;
-  width: 100px;
-  background-color: rgba(0, 0, 0, .0);
+  // height: 26px;
+  // width: 100px;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   padding: 0;
   z-index: 1;
-
 }
-
 
 .burger-line {
   position: absolute;
   width: 28px;
   height: 2px;
   background-color: #fff;
-  transition: .5s all;
+  transition: 0.5s all;
 }
 
 .first {
@@ -46,15 +44,16 @@
 }
 
 .main-menu {
-  margin: 70px auto;
+  // margin: 70px auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  overflow: hidden;
-  transition: .5s all;
+  // transition: 0.5s all;
+
+  // @media (min-width: 767px) and (max-width: 1439px) {
+  //   margin-top: 142px;
+  // }
 
 }
-
 
 a {
   display: block;
@@ -68,22 +67,28 @@ a {
   font-weight: 700;
   letter-spacing: 0.7px;
   text-align: center;
-  margin-top: 13px;
+
+  @media (min-width: 1439px) {
+
+    font-size: 18px;
+    font-weight: 700;
+  }
+
 }
 
 .main-menu-items::after {
   content: '';
   display: block;
-  width: 136px;
+  width: 100%;
   height: 2px;
   background-color: rgba(252, 174, 38, 0);
-  margin: 8px auto 0;
+  margin: 7px auto 0;
 }
 
 .main-menu-items:hover::after {
   content: '';
   display: block;
-  width: 136px;
+  width: 100%;
   height: 2px;
   background-color: #fcae26;
   margin: 8px auto 0;
@@ -98,10 +103,19 @@ a {
   border-radius: 5px;
   margin-top: 30px;
   color: #f6f9fa;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.4px;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    margin-top: 33px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+
 }
 
 .menu-list-head-text {
@@ -117,7 +131,50 @@ a {
   font-family: 'Ubuntu', 'Arial', sans-serif;
   font-weight: 400;
   text-align: justify;
-  margin: 0 auto;
+  margin: 0 auto 62px;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    width: 444px;
+    height: 64px;
+    font-size: 27px;
+    padding: 2px 13px;
+    line-height: 29px;
+    letter-spacing: 1.35px;
+  }
+
+
+  @media (min-width: 1440px) {
+    width: 519px;
+    height: 100px;
+    padding: 21px 33px 21px 43px;
+    margin: 0;
+    width: 491px;
+    height: 100px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.-rightLine {
+  @media (min-width: 1440px) {
+    border-left: 2px solid #fcae26;
+    padding-left: 24px;
+  }
+
+}
+
+.menu-list-head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-list-head--op {
+  margin-bottom: 280px;
+}
+
+.menu-list-head--cl {
+  margin-bottom: 72px;
 }
 
 .menu-list-head-text-decor {
@@ -134,7 +191,7 @@ a {
   height: 19px;
   border: none;
   background-color: rgba(252, 174, 38, 0);
-  margin: 62px auto 0;
+  margin: 0px auto 0;
   cursor: pointer;
 }
 
@@ -143,6 +200,11 @@ a {
   height: 19px;
 }
 
+.menu-list-head-wrapper {
+  @media (min-width: 1440px) {
+    width: 1300px;
+  }
+}
 
 .menu-list-head-header {
   color: #ffffff;
@@ -150,19 +212,39 @@ a {
   font-size: 35px;
   font-weight: 900;
   letter-spacing: 0.88px;
-  margin-top: 276px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    font-size: 45px;
+  }
+
+  @media (min-width: 1440px) {
+    text-align: left;
+    margin-bottom: 43px;
+  }
+}
+
+.menu-list-head-wrapper {
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+  }
 }
 
 .menu-list-op {
   width: 100%;
-  padding: 20px;
-}
+  padding: 20px 20px 40px;
 
-.menu-list-head {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  @media (min-width: 767px) and (max-width: 1439px) {
+    padding: 28px 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 29px 50px 88px;
+
+  }
 }
 
 .button-m {
@@ -172,6 +254,10 @@ a {
   outline: none;
   border: 0;
   background: transparent;
+
+  @media (min-width: 1439px) {
+    display: none;
+  }
 }
 
 .menu-list-op.isOpen {
@@ -182,7 +268,8 @@ a {
   display: none;
   position: absolute;
   background-color: #824fe3;
-  height: 600px;
+  top: 0;
+  bottom: 0;
 }
 
 .menu-list-cl.isOpen {
@@ -191,4 +278,25 @@ a {
   padding: 20px;
   flex-direction: column;
   align-items: center;
+  min-height: 100%;
+
+  @media (min-width: 767px) and (max-width: 1439px) {
+    padding: 28px 40px;
+    padding-bottom: 60px;
+  }
+}
+
+
+.main-menu-desktop {
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
+
+  @media (min-width: 1439px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1020px;
+  }
 }

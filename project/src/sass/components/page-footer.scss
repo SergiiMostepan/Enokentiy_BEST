@@ -14,7 +14,7 @@
     height: 300px;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     height: 306px;
   }
 }
@@ -46,7 +46,7 @@
     flex-direction: row;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
     padding-right: 157px;
   }
@@ -59,7 +59,6 @@
 
 .contacts {
   width: 185px;
-  height: 90px;
 }
 
 .contacts-link {
@@ -77,11 +76,7 @@
   justify-content: space-between;
   flex-direction: column;
 
-  @media (min-width: 320px) and (max-width: 766px) {
-    height: 114px;
-  }
-
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
     width: 520px;
   }
@@ -113,7 +108,7 @@
     justify-content: space-around;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     width: 162px;
   }
 }
@@ -122,7 +117,6 @@
   position: absolute;
   bottom: 0;
   display: block;
-  height: 100px;
   width: 100%;
   background-color: #151515;
   padding: 23px;
@@ -134,7 +128,7 @@
     padding: 17px;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     height: 49px;
     padding: 17px;
   }
@@ -142,8 +136,7 @@
 }
 
 .politics-flex {
-  @media (min-width: 1400px) {
-    height: 49px;
+  @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
     padding-right: 660px;
@@ -167,12 +160,13 @@
 
 .up-button {
   background-color: #333333;
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   background-image: url(../../images/arrow.png);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  z-index: 2;
 
   @media (max-width: 766px) {
     display: none;
@@ -181,16 +175,15 @@
   @media (min-width: 767px) and (max-width: 1439px) {
     width: 55px;
     height: 55px;
-    right: 50px;
-    top: 0;
-    transform: translateY(-50%);
+    right: 39px;
+    bottom: 37px;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     width: 65px;
     height: 65px;
-    right: 40px;
-    top: 205px;
+    right: 39px;
+    bottom: 37px;
   }
 }
 
@@ -198,7 +191,7 @@
   width: 55px;
   height: 55px;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1440px) {
     width: 65px;
     height: 65px;
   }

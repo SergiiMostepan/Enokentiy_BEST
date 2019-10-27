@@ -8,32 +8,56 @@
   <title>Project</title>
   <link rel="stylesheet" href="css/styles.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Ubuntu:400,700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 </head>
 
 <body>
   <header class="page-header" id="top">
-
     <div class="menu-list menu-list-op">
-      <div class="menu-list-head">
-        <a href="#" class="site-logo"><img src="images/Logo.png"> </a>
+      <div class="menu-list-head menu-list-head--op">
+        <a href="#" class="site-logo">
+          <picture>
+            <source srcset="images/Logo-H.png" media="(min-width: 767px)">
+            <img srcset="images/Logo.png" alt="My default image">
+          </picture>
+        </a>
+        <nav class="main-menu-desktop">
+          <a class="main-menu-items" href="#">Front-End</a>
+          <a class="main-menu-items" href="#">Game Dev</a>
+          <a class="main-menu-items" href="#">Smart Design</a>
+          <a class="main-menu-items" href="#">GoStart Kids</a>
+          <a class="main-menu-items" href="#">Вакансії</a>
+          <a class="main-menu-items" href="#">Контакти</a>
+          <button class="main-menu-button">Залишити заявку</button>
+        </nav>
         <button class="button-m button-op">
           <div class="burger-line first"></div>
           <div class="burger-line second"></div>
           <div class="burger-line fourth"></div>
         </button>
       </div>
-      <h2 class="menu-list-head-header">Наша місія</h2>
-      <div class="menu-list-head-text">Допомогти кожному підлітку
-        створити свою <span class="menu-list-head-text-decor">історію успіху</span></div>
-      <div class="main-menu-scroll"><a class="main-menu-scroll-link" href="#bottom"></a></div>
+      <div class="menu-list-head-wrapper">
+        <h2 class="menu-list-head-header">Наша місія</h2>
+        <div class="menu-list-head-text">
+          <div class="-rightLine">
+            Допомогти кожному підлітку створити свою
+            <span class="menu-list-head-text-decor">історію успіху</span>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu-scroll">
+        <a class="main-menu-scroll-link" href="#bottom"></a>
+      </div>
     </div>
 
-
-
     <div class="menu-list menu-list-cl">
-      <div class="menu-list-head">
-        <a href="#" class="site-logo"><img src="images/Logo.png"></a>
+      <div class="menu-list-head menu-list-head--cl">
+        <a href="#" class="site-logo">
+          <picture>
+            <source srcset="images/Logo-H.png" media="(min-width: 767px)">
+            <img srcset="images/Logo.png" alt="My default image">
+          </picture>
+        </a>
         <button class="button-m button-cl">
           <div class="burger-line second cl_s"></div>
           <div class="burger-line third cl_si"></div>
@@ -49,19 +73,15 @@
         <button class="main-menu-button">Залишити заявку</button>
       </nav>
     </div>
-
-
-
-
   </header>
-
-
 
   <footer class="page-footer">
     <div class="wrapper-footer footer-blocks">
-      <a href="#" class="site-logo-bottom"><img src="images/Logo.png"></a>
+      <a href="#" class="site-logo-bottom"><img src="images/Logo.png" /></a>
       <div class="page-footer-contacts">
-        <address class="contacts-adress">01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки 26 4-й поверх
+        <address class="contacts-adress">
+          01133 Україна, Київ 5 хвилин від м. Печерська бул. Лесі Українки 26
+          4-й поверх
         </address>
         <div class="contacts">
           <a class="contacts-link" href="mailto:contact@goiteens.ua">contact@goiteens.ua</a>
@@ -72,9 +92,9 @@
         <div class="footer-buttons">
           <button class="application-button">Залишити заявку</button>
           <div class="footer-socials">
-            <img class="footer-socials-img" src="images/Twitter.png" width="37px" height="37px">
-            <img class="footer-socials-img" src="images/Facebook.png" width="37px" height="37px">
-            <img class="footer-socials-img" src="images/Youtube.png" width="37px" height="37px">
+            <img class="footer-socials-img" src="images/Twitter.png" width="37px" height="37px" />
+            <img class="footer-socials-img" src="images/Facebook.png" width="37px" height="37px" />
+            <img class="footer-socials-img" src="images/Youtube.png" width="37px" height="37px" />
           </div>
         </div>
       </div>
@@ -91,18 +111,19 @@
   </footer>
 
   <script>
-    document.querySelector('.button-op').addEventListener('click', function () {
-      document.querySelector('.menu-list-cl').classList.add('isOpen')
-    });
+    document
+      .querySelector('.button-op')
+      .addEventListener('click', function () {
+        document.querySelector('.menu-list-cl').classList.add('isOpen');
+      });
 
-    document.querySelector('.button-cl').addEventListener('click', function () {
-      document.querySelector('.menu-list-cl').classList.remove('isOpen')
-    });
+    document
+      .querySelector('.button-cl')
+      .addEventListener('click', function () {
+        document.querySelector('.menu-list-cl').classList.remove('isOpen');
+      });
 
   </script>
-
-
-
 </body>
 
 </html>
