@@ -1,0 +1,153 @@
+.section{
+  width: 280px;
+  margin: 0 auto;
+}
+
+.section-list{
+  @extend %list;
+}
+
+.direction_item{
+  width: 280px;
+  height: 241px;
+  box-shadow: 2px 3px 8px rgba(1, 1, 1, 0.1);
+  background-color: #fafafa;
+  padding: 25px 0 23px 44px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in;
+  border-radius: 7px;
+
+  &-title{
+    color: #222222;
+    font-family: $main-font;
+    font-size: $fs-25;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    margin-bottom: 30px;
+  }
+
+  &-about{
+    color: #444444;
+    font-family: $main-font;
+    font-size: $fs-16;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    margin-bottom: 25px;
+  }
+
+  &-years{
+    position: relative;
+    color: #e9ac38;
+    font-family: $secondary-font;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.45px;
+    margin-bottom: 10px;
+  }
+}
+
+.direction_item-years::before{
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+  display: block;
+  content: 'років';
+  color: #e9ac38;
+  font-family: $main-font;
+  font-size: $fs-14;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  border-bottom: 1px solid  #e9ac38;
+}
+
+.direction-item_link{
+  color: #e9ac38;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.direction_item:hover{
+  background-color: #e9ac38;
+}
+
+.direction_item:hover>.direction_item-about{
+  color: white;
+}
+
+.direction_item:hover>.direction_item-years{
+  color: white;
+}
+
+.direction_item:hover>.direction_item-years::before{
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.direction_item:hover>.direction-item_link{
+  color: white;
+}
+
+@media (min-width: 767px) and (max-width: 1439px) {
+  .section{
+    width: 621px;
+  }
+
+  .direction_item{
+    width: 310px;
+    margin-bottom: 0;
+  }
+
+  .direction_item:nth-child(1){
+    border-bottom: 1px solid #e3e3e4;
+    border-right: 1px solid #e3e3e4;
+  }
+
+  .direction_item:nth-child(2){
+    border-bottom: 1px solid #e3e3e4;
+    border-left: 1px solid #e3e3e4 ;
+  }
+
+  .direction_item:nth-child(3){
+    border-top: 1px solid #e3e3e4;
+    border-right: 1px solid #e3e3e4;
+  }
+
+  .direction_item:nth-child(4){
+    border-top: 1px solid #e3e3e4;
+    border-left: 1px solid #e3e3e4;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section{
+    width: 1300px;
+  }
+
+  .direction_item{
+    padding-right: 40px;
+    width: 325px;
+  }
+
+  .direction_item-title{
+    font-size: $fs-30;
+  }
+
+  .direction_item-about{
+    font-size: $fs-18;
+  }
+
+  .direction_item-years{
+    font-size: 40px;
+    margin-right: 10px;
+  }
+
+  .direction_item-years::before{
+    left: 115px;
+  }
+}

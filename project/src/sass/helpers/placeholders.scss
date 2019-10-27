@@ -1,0 +1,16 @@
+%list{
+  list-style: none;
+}
+
+@media (min-width: 767px) {
+  %list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  %list{
+    justify-content: flex-start;
+  }
+}
