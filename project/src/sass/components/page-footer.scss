@@ -1,7 +1,7 @@
 .page-footer {
   background-color: rgba($color: #222222, $alpha: 1);
-  height: 562px;
-  color: #969aa8;
+  // height: 562px;
+  color: #acacac;
   font-family: 'Ubuntu', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -10,13 +10,13 @@
   position: relative;
   padding-top: 43px;
 
-  @media (min-width: 767px) and (max-width: 1439px) {
-    height: 300px;
-  }
+  // @media (min-width: 767px) and (max-width: 1439px) {
+  //   height: 300px;
+  // }
 
-  @media (min-width: 1440px) {
-    height: 306px;
-  }
+  // @media (min-width: 1440px) {
+  //   height: 306px;
+  // }
 }
 
 .footer-blocks {
@@ -24,6 +24,11 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 63px;
   }
 }
 
@@ -34,9 +39,9 @@
 .page-footer-contacts {
   margin-top: 28px;
 
-  @media (min-width: 320px) and (max-width: 766px) {
-    height: 354px;
-  }
+  // @media (min-width: 320px) and (max-width: 766px) {
+  //   height: 354px;
+  // }
 
   display: flex;
   flex-direction: column;
@@ -55,10 +60,18 @@
 .contacts-adress {
   font-style: normal;
   width: 185px;
+
+  @media (min-width: 320px) and (max-width: 766px) {
+    margin-bottom: 29px;
+  }
 }
 
 .contacts {
   width: 185px;
+
+  @media (min-width: 320px) and (max-width: 766px) {
+    margin-bottom: 36px;
+  }
 }
 
 .contacts-link {
@@ -95,6 +108,10 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  @media (max-width: 766px) {
+    margin-bottom: 34px;
+  }
 }
 
 .footer-socials {
@@ -103,6 +120,7 @@
 
   @media (min-width: 320px) and (max-width: 766px) {
     width: 146px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: 767px) and (max-width: 1439px) {
@@ -120,22 +138,22 @@
 }
 
 .politics {
-  position: absolute;
-  bottom: 0;
+  // position: absolute;
+  // bottom: 0;
   display: block;
   width: 100%;
   background-color: #151515;
   padding: 23px;
 
   @media (min-width: 767px) and (max-width: 1439px) {
-    height: 49px;
+    // height: 49px;
     display: flex;
     justify-content: space-between;
     padding: 17px;
   }
 
   @media (min-width: 1440px) {
-    height: 49px;
+    // height: 49px;
     padding: 17px;
   }
 
